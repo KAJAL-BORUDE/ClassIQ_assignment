@@ -19,6 +19,12 @@ header{
 }
 
 @media (max-width:768px) {
+    html,body{
+        width: 130%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     header{
         flex-direction: column;
         
@@ -29,12 +35,20 @@ header{
     }
 
     .header_left,.header_right{
-        padding-left: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
     main{
-        column-gap: 7vw;
+        margin-top: 4%;
+        margin-bottom: -10%;
+        column-gap: 7%;
         padding: 0 2%;
+    }
+
+    .main_right .si{
+        display: none;
     }
     .main_left,.main_right{
         justify-content: center;
@@ -45,15 +59,33 @@ header{
         row-gap: 8vh;
     }
     .main_left img{
-        margin-top: 6vh;
+        padding-top: 70%;
     }
+    
     .main_3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        text-align: center;
-        row-gap: 8vh;
-        height: 20vh;
-        width: 65vw;
-        margin-bottom: 50vh;
+        gap: 4rem;
+    }
+    .main_3 img{
+        height: auto;
+        width: 15rem;
+    }
+    .main_4{
+        padding-top: 6rem;
+        margin-bottom: -3rem;
+    }
+
+    .main_5 {
+        display: flex;
+        flex-direction:column;
+        gap: 2rem;
+    }
+    .main_5 div{
+        padding: 0 15%;
+      
     }
     
     .main_6{
@@ -64,8 +96,33 @@ header{
         
     }
     .main7{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
         column-gap: 20%;
+        margin-bottom: -10rem;
+        
     }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+       
+    }
+
+    .c1{
+        margin-top: 4rem;
+        width: 40rem;
+    }
+
+    form{
+        width: 50%;
+        height: 70%;
+        gap: 2rem;
+    }
+
     
     
     
@@ -189,8 +246,8 @@ main{
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
-    height: 32vh;
-    width: 15vw;
+    height: 35%;
+    width: 25%;
     border: none;
     border-radius: 8px;
     background-color: #ECEDEF;
@@ -230,8 +287,12 @@ main{
     margin-right: 10vw;
     
 }
+.main6_right p{
+    margin-bottom: 1rem;
+}
 .main6_right{
-    font-size: 20px;
+    font-size: 2rem;
+    
     
 }
 .icon{
@@ -257,7 +318,8 @@ main{
     justify-content: space-between;
     align-items: center;
     padding:var(--comman-padding);
-    font-size: 24px;
+    font-size: 1.6rem;
+    
     
 }
 
